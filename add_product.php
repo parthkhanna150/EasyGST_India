@@ -10,9 +10,11 @@
             $("#myForm1").validate()
         });
         function showMRP(str){
+
+           // debugger;
             var sell=document.getElementById('sell').value;
-            alert('Choose values first!');
-            if(str === '' || sell ===''){
+            //alert('Choose values first!');
+            if(str == '' || sell ==''){
                 alert('Choose values first!');
             }
 
@@ -23,10 +25,10 @@
                     var split_output = output.split('-');
                     document.getElementById('cgst').value = split_output[0] +'%';
                     document.getElementById('sgst').value = split_output[1] +'%';
-                    var sum = parseInt(split_output[0])+parseInt(split_output[1]);
-                    var mrp = ((sell * total)/100)+parseInt(sell);
-                    document.getElementById('igst').value=total+'%';
-                    document.getElementById('mrp').value=mrp+'%';
+                    document.getElementById('igst').value = split_output[2] +'%';
+                    var total = split_output[2];
+                    var mrp = (parseInt(sell) * total)/100+parseInt(sell);
+                    document.getElementById('mrp').value= mrp;
                 }
             };
             xmlhttp.open("GET", "sumAjax.php?q="+str, true);
@@ -52,9 +54,9 @@
         <div class="form-group">
             Supplier Name
             <?php
-            $s="select * from suppliers";
+            $s="select * from suppliers where user_email='".$_SESSION["username"]."'";
             $result = mysqli_query($conn,$s);
-            $ans='<select class="form-control">';
+            $ans='<select class="form-control"  name="supplierId">';
             while($row = mysqli_fetch_array($result)){
                 $ans=$ans."<option value='".$row[0]."'>".$row[1]."</option>";
             }
@@ -68,18 +70,18 @@
         </div>
         <div class="form-group">
             Upload Image
-            <input type="text" class="form-control">
+            <input type="file" name="fileToUpload" id="fileToUpload">
         </div>
         <div class="form-group">
             Enter Selling Price
-            <input type="text" class="form-control" name="sell" data-msg-required="Image cannot be blank" data-rule-required="true">
+            <input type="text" class="form-control" name="sell" id="sell">
         </div>
-        <div class="form-group" id="str" onclick="showMRP(this.value)">
+        <div class="form-group" >
             Tax Slab
             <?php
             $s="select * from items";
             $result = mysqli_query($conn,$s);
-            $ans='<select class="form-control">';
+            $ans='<select class="form-control" name="str"  id="str" onchange="showMRP(this.value)">';
             $ans=$ans."<option>Choose</option>";
             while($row = mysqli_fetch_array($result)){
                 $ans=$ans."<option value='".$row[0]."'>".$row[1]."</option>";
@@ -91,20 +93,20 @@
         <div class="row">
             <div class="form-group col-sm-4">
                 Central GST
-                <input type="text" class="form-control" name="cgst">
+                <input readonly type="text" class="form-control" name="cgst" id="cgst">
             </div>
             <div class="form-group col-sm-4">
                 State GST
-                <input type="text" class="form-control" name="sgst">
+                <input readonly type="text" class="form-control" name="sgst" id="sgst">
             </div>
             <div class="form-group col-sm-4">
                 Total GST
-                <input type="text" class="form-control" name="igst">
+                <input readonly type="text" class="form-control" name="igst" id="igst">
             </div>
         </div>
         <div class="form-group">
             MRP
-            <input type="text" class="form-control" name="mrp">
+            <input readonly type="text" class="form-control" name="mrp" id="mrp">
         </div>
         <div class="form-group">
             <input type="submit" class="btn btn-success">

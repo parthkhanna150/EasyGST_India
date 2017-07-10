@@ -10,7 +10,7 @@ while ($row=mysqli_fetch_array($result)){
     }
 }
 if($flag==1){
-    header("location: add_supplier");
+    header("location: add_supplier.php");
 }
 else{
     $s1 = "insert into suppliers values(null,'".$_POST["textbox1"]."','".$_POST["textbox2"]."','".$_POST["textbox3"]."','".$_POST["textbox4"]."','".$_POST["textbox5"]."','".$_POST["textbox6"]."','".$_SESSION["username"]."')";
