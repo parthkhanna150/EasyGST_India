@@ -41,8 +41,26 @@
     <?php
     include "user_header.php";
     include "connection.php";
+
+    if(isset($_REQUEST['er']))
+    {
+        $val=$_REQUEST['er'];
+        if($val==1)
+        {
+            echo '<span class="text-danger">Product already Exist</span>';
+        }
+        elseif($val==2)
+        {
+            echo '<span class="text-success">Product added Successfully</span>';
+        }
+        else
+        {
+            echo '<span class="text-danger">Product already Exist</span>';
+        }
+    }
+
     ?>
-    <form action="insert_product.php" id="myForm1" method="post">
+    <form action="insert_product.php" id="myForm1" method="post" enctype="multipart/form-data">
         <div class="form-group">
             Enter Product Name
             <input type="text" class="form-control" name="textbox1" data-rule-required="true" data-msg-required="Image cannot be blank">
@@ -69,8 +87,8 @@
             <input type="text" class="form-control" name="textbox3" data-msg-required="Image cannot be blank" data-rule-required="true">
         </div>
         <div class="form-group">
-            Upload Image
-            <input type="file" name="fileToUpload" id="fileToUpload">
+            Insert Image
+            <input type="file" name="image" id="image">
         </div>
         <div class="form-group">
             Enter Selling Price
@@ -112,6 +130,7 @@
             <input type="submit" class="btn btn-success">
         </div>
     </form>
+
 </div>
 </body>
 </html>

@@ -75,7 +75,7 @@
 </div>
 <div class="form-group">
     Upload Image
-    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="file" name="image" id="image">
 </div>
 <div class="form-group">
     Enter Selling Price
