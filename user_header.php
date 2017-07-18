@@ -4,8 +4,12 @@ if(is_null($_SESSION["username"]))
 {
     header("location: login_user.php");
 }
+else
+{
+    $username=$_SESSION["username"];
+}
 ?>
-<script type="text/javascript" src="js/myscript.js"></script>
+<script type="text/javascript" src="myscript.js"></script>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -22,6 +26,8 @@ if(is_null($_SESSION["username"]))
                 <li><a href="add_product.php">Add Product</a></li>
                 <li><a href="view_product.php">View Product</a></li>
                 <li><a href="view_supplier.php">View Supplier</a></li>
+                <li><a href="gst_r1.php">Report</a></li>
+                <li><a href="gst_r2.php">Report2</a></li>
                 <li><a href="view_bill.php">Billing</a></li>
                 <li><a href="pwd_user.php">Change Password</a></li>
             </ul>

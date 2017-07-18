@@ -40,7 +40,7 @@
     <?php
     include "user_header.php";
     include "connection.php";
-    $s="select * from `products` where `id`='". $_GET['prod'] . "'";
+    $s="select * from `products` where `product_id`='". $_GET['prod'] . "'";
     $result=mysqli_query($conn, $s);
     $row=mysqli_fetch_array($result);
     ?>
@@ -66,7 +66,7 @@
         ?>
 <div class="form-group">
     <?php
-    $s="select * from `products` where `id`='". $_GET['prod'] . "'";
+    $s="select * from `products` where `product_id`='". $_GET['prod'] . "'";
     $result=mysqli_query($conn, $s);
     $row=mysqli_fetch_array($result);
     ?>
@@ -110,13 +110,13 @@
     </div>
 </div>
         <?php
-        $s="select * from `products` where `id`='". $_GET['prod'] . "'";
+        $s="select * from `products` where `product_id`='". $_GET['prod'] . "'";
         $result=mysqli_query($conn, $s);
         $row=mysqli_fetch_array($result);
         ?>
 <div class="form-group">
     MRP
-    <input readonly type="text" value="<?php echo $row[8]?>" class="form-control" name="mrp" id="mrp">
+    <input readonly type="text" class="form-control" name="mrp" id="mrp">
 </div>
 <div class="form-group">
     <input type="submit" class="btn btn-success">
