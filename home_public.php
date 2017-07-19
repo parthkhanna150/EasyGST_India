@@ -5,12 +5,16 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+
+<?php
+include "public_header.php";
+?>
 <div class="container">
 
-    <?php
-    include "public_header.php";
-    ?>
     <h1 id="homeWelcome">Welcome to Public Home Page</h1>
 </div>
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

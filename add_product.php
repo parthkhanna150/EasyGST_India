@@ -37,9 +37,11 @@
     </script>
 </head>
 <body>
+<?php
+include "user_header.php"
+?>
 <div class="container">
     <?php
-    include "user_header.php";
     include "connection.php";
 
     if(isset($_REQUEST['er']))
@@ -132,5 +134,8 @@
     </form>
 
 </div>
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

@@ -11,10 +11,11 @@
     </script>
 </head>
 <body>
+<?php
+include "admin_header.php"
+?>
 <div class="container">
-    <?php
-    include "admin_header.php"
-    ?>
+
     <form action="insert_admin.php" id="myForm1" method="post">
         <div class="form-group">
             Enter Email Address
@@ -44,6 +45,8 @@
         </div>
     </form>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

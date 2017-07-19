@@ -70,12 +70,15 @@ include "user_header.php"
             <input type="text" class="form-control" name="central" id="central">
         </div>
         <div class="form-group">
-            <input type="button" value="submit" class="btn btn-success">
+            <input type="submit" value="submit" class="btn btn-success">
         </div>
     </form>
         </div>
         <div class="col-sm-3"></div>
     </div>
 </div>
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

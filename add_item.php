@@ -11,10 +11,11 @@
     </script>
 </head>
 <body>
+<?php
+include "admin_header.php"
+?>
 <div class="container">
-    <?php
-    include "admin_header.php"
-    ?>
+
     <h1>Insert data for new item</h1>
     <form action="insert_data.php" id="myForm1" method="post">
         <div class="form-group">
@@ -38,6 +39,8 @@
         </div>
     </form>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

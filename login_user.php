@@ -2,7 +2,6 @@
 <html>
 <head>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
     <script src="jquery-1.11.3.min.js"></script>
     <script src="dist/jquery.validate.js"></script>
     <script>
@@ -12,11 +11,12 @@
     </script>
 </head>
 <body>
-<div class="container">
-    <?php
-    include "public_header.php"
+<?php
+include "public_header.php"
 
-    ?>
+?>
+
+<div class="container">
     <h1>Member Login</h1>
     <form action="verify_user.php" id="myLogIn" method="post">
         <div class="form-group">
@@ -32,6 +32,8 @@
         </div>
     </form>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

@@ -16,10 +16,12 @@ include 'cart.php';
     </script>
 </head>
 <body>
+<?php
+include "user_header.php";
+?>
 <form action="insert_bill.php" id="myForm1" method="post">
     <div class="container">
         <?php
-        include "user_header.php";
         include "connection.php";
             if (isset($_REQUEST['q'])) {
                 echo "<span class='text-danger'>" . $_REQUEST['q'] . "</span>";
@@ -82,11 +84,11 @@ include 'cart.php';
                     for ($i = 0; $i < count($ar); $i++) {
                         $total += $ar[$i]->mrp * $ar[$i]->qty;
                         ?>
-                        <tr>
+                        <tr id="<?php $i ?>">
                             <td><?php echo $i + 1; ?></td>
                             <td><?php echo $ar[$i]->hsn; ?></td>
                             <td><?php echo $ar[$i]->product_name; ?></td>
-                            <td><img src="><?php echo $ar[$i]->photo; ?>" height="50" width="50"></td>
+                            <td><img src="<?php echo $ar[$i]->photo ?>" height="50" width="50"></td>
                             <td><?php echo $ar[$i]->price; ?></td>
                             <td><?php echo $ar[$i]->cgst; ?></td>
                             <td><?php echo $ar[$i]->sgst; ?></td>
@@ -94,7 +96,7 @@ include 'cart.php';
                             <td><?php echo $ar[$i]->mrp; ?></td>
                             <td><?php echo $ar[$i]->qty; ?></td>
                             <td><?php echo $ar[$i]->qty * $ar[$i]->mrp; ?></td>
-                            <td>Delete</td>
+                            <td><a href="delete_cart.php?q=<?php echo $ar[$i]->id; ?>"><input type="button" value="Delete" class="btn-success"></a> </td>
                         </tr>
                         <?php
                     }
@@ -102,7 +104,8 @@ include 'cart.php';
                 </table>
                 <?php
             }
-            ?>    </div>
+            ?>
+        </div>
         <div class="col-sm-4">
 
             <div class="form-group">
@@ -152,5 +155,8 @@ include 'cart.php';
         </div>
     </div>
 </form>
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

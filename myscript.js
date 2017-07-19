@@ -53,3 +53,16 @@
         xhttp.open("GET", "getbill.php?q=" + from+"&to="+to, true);
         xhttp.send();
     }
+
+    function delete_bill(){
+        var xhttp;
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var output = this.responseText;
+                document.getElementById('i').innerHTML="";
+            }
+        };
+        xhttp.open("GET", "view_bill.php", true);
+        xhttp.send();
+    }

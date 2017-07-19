@@ -18,7 +18,7 @@ $s="select * from public_signup WHERE email='".$_SESSION["username"]."'";
 $result = mysqli_query($conn,$s);
 $row = mysqli_fetch_array($result);
 ?>
-
+<div class="container">
 <table class="table table-responsive table-bordered">
     <form action="" method="post">
         <tr>
@@ -143,5 +143,9 @@ $row = mysqli_fetch_array($result);
     }
     ?>
 </table>
+</div>
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

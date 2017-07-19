@@ -36,9 +36,10 @@
     </script>
 </head>
 <body>
+<?php     include "user_header.php";
+?>
 <div class="container">
     <?php
-    include "user_header.php";
     include "connection.php";
     $s="select * from `products` where `product_id`='". $_GET['prod'] . "'";
     $result=mysqli_query($conn, $s);
@@ -123,6 +124,9 @@
 </div>
     </form>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
+
 </html>

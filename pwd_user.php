@@ -4,10 +4,11 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+<?php
+include "user_header.php";
+?>
 <div class="container">
-    <?php
-    include "user_header.php";
-    ?>
+
     <div class="row">
         <div class="col-sm-6">
             <form action="update_password_user.php" method="post">
@@ -35,5 +36,9 @@
         <div class="col-sm-6"></div>
     </div>
 </div>
+<?php
+include 'footer.php';
+?>
 </body>
+
 </html>

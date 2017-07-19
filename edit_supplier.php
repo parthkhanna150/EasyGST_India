@@ -11,6 +11,8 @@
     </script>
 </head>
 <body>
+<?php     include "user_header.php";
+?>
 <div class="container">
     <?php
     include "user_header.php";
@@ -49,6 +51,8 @@
         </div>
     </form>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

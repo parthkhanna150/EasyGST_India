@@ -4,9 +4,10 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+<?php     include "user_header.php";
+?>
 <div class="container">
     <?php
-    include "user_header.php";
     include "connection.php";
     $s="select * from suppliers where user_email='".$_SESSION["username"]."'";
     $result=mysqli_query($conn, $s);
@@ -28,6 +29,8 @@
 
     ?>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

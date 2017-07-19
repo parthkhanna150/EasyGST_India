@@ -4,9 +4,11 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+<?php
+include "admin_header.php";
+?>
 <div class="container">
     <?php
-    include "admin_header.php";
     include "connection.php";
     $s="select * from `items` where `id`='". $_GET['item'] . "'";
     $result=mysqli_query($conn, $s);
@@ -39,5 +41,8 @@
         <div class="col-sm-6"></div>
     </div>
 </div>
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

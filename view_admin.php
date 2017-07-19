@@ -4,9 +4,11 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+<?php
+include "admin_header.php";
+?>
 <div class="container">
     <?php
-    include "admin_header.php";
     include "connection.php";
     $s="select * from admins";
     $result=mysqli_query($conn, $s);
@@ -25,6 +27,8 @@
 
     ?>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

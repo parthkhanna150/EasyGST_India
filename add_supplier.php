@@ -11,10 +11,11 @@
     </script>
 </head>
 <body>
+<?php
+include "user_header.php"
+?>
 <div class="container">
-    <?php
-    include "user_header.php"
-    ?>
+
     <form action="insert_supplier.php" id="myForm1" method="post">
         <div class="form-group">
             Enter Name
@@ -45,6 +46,8 @@
         </div>
     </form>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>

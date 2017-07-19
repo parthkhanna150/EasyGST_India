@@ -4,9 +4,11 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+<?php
+include "admin_header.php";
+?>
 <div class="container">
     <?php
-    include "admin_header.php";
     include "connection.php";
     $s="select * from items";
     $i=1;
@@ -30,6 +32,8 @@
 
     ?>
 </div>
-
+<?php
+include 'footer.php';
+?>
 </body>
 </html>
