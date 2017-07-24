@@ -9,3 +9,7 @@ More on GST in India [here](http://www.gstindia.com/about/).
 
 I therefore developed this software in the form of a web app using which firms/entities can conveniently save themselves
 from the arduous job of accounting based on this new regime. 
+
+## Getting started
+
+
