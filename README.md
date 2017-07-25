@@ -8,4 +8,12 @@ spend extravagant amounts of money on people who understand GST accouting.
 More on GST in India [here](http://www.gstindia.com/about/).
 
 I therefore developed this software in the form of a web app using which firms/entities can conveniently save themselves
+<<<<<<< HEAD
 from the arduous job of accounting based on this new regime.
+=======
+from the arduous job of accounting based on this new regime. 
+
+## Getting started
+
+
+>>>>>>> a74771fb4b474ad058d3e61ba4fba7748c1af162
