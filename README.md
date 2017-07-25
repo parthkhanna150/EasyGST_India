@@ -10,6 +10,23 @@ More on GST in India [here](http://www.gstindia.com/about/).
 I therefore developed this software in the form of a web app using which firms/entities can conveniently save themselves
 from the arduous job of accounting based on this new regime.
 
-## Getting started
 
+### Prerequisites
 
+The web application is recommended to be used in Chrome browser, although you may use others such as Safari, Opera, IE 10,11 and firefox.
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Technologies Used
+
+* [Bootstrap](getbootstrap.com/)
+* [JQuery](https://jquery.com/)
+* [AJAX](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+* [MariaDB](https://mariadb.org/about/)
+* Languages: PHP, JavaScript, HTML, CSS, SQL
+
+## Acknowledgments
+
+* W3Layouts for frontend Design
