@@ -14,7 +14,7 @@ include 'header_files.php';
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a  href="index.html">Net <span>Banking</span></a></h1>
+                    <h1><a  href="index.php">Easy GST <span>India</span></a></h1>
                 </div>
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -35,14 +35,14 @@ include 'header_files.php';
                         <ul class="rslides callbacks callbacks1" id="slider4">
                             <li>
                                 <div class="agileits-banner-info">
-                                    <h3>Get reliable help with your credit card processing needs</h3>
-                                    <p>Donec tellus metus, ornare et mollis ut, maximus id nisi. Quisque scelerisque accumsan sem nec ullamcorper. Cras sed purus eget augue egestas commodo. Sed erat magna, pharetra aliquet mattis mollis, maximus eget lacus. </p>
+                                    <h3>Take it Easy ;)</h3>
+                                    <p>Easy GST India: Making accounting easy since 2017</p>
                                 </div>
                             </li>
                             <li>
                                 <div class="agileits-banner-info">
-                                    <h3>Accept Credit Cards On Your Smartphone Today!</h3>
-                                    <p>Sed erat magna, pharetra aliquet mattis mollis, maximus eget lacus. Donec tellus metus, ornare et mollis ut, maximus id nisi. Quisque scelerisque accumsan sem nec ullamcorper. Cras sed purus eget augue egestas commodo. </p>
+                                    <h3>Designed carefully for you!</h3>
+                                    <p>Easy GST India: Making accounting easy since 2017</p>
                                 </div>
                             </li>
                         </ul>
@@ -100,7 +100,7 @@ include 'header_files.php';
             <div class="clearfix"> </div>
         </div>
         <div class="w3l-welcome-text">
-            <p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae </p>
+            Make use of our secure software in your business!
         </div>
     </div>
 </div>
@@ -116,15 +116,15 @@ include 'header_files.php';
                 <img src="images/9.jpg" alt="">
             </div>
             <div class="col-md-6 about-left">
-                <h4>Sed tincidunt lorem </h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt lorem sed velit fermentum lobortis, eget placerat mauris sed lectus tellus
-                    <span> Fusce eu semper lacus, sodales id elit a, feugiat porttitor nulla. Sed porta magna vitae nisl vulputate lacinia.</span></p>
+                <h4>I'm a budding develper</h4>
+                <p>who has interest in accounting and finance
+                    <span> therefore made this software to cater to people who're dissatisfied with their current methods to tackle this new issue.
                 <ul>
-                    <li><span class="glyphicon glyphicon-share-alt"></span> Duis aute irure dolor in reprehenderit voluptate </li>
-                    <li><span class="glyphicon glyphicon-share-alt"></span> Excepteur sint occaecat cupidatat non proident</li>
-                    <li><span class="glyphicon glyphicon-share-alt"></span> Sunt in culpa qui officia deserunt mollit </li>
-                    <li><span class="glyphicon glyphicon-share-alt"></span> Duis aute irure dolor in reprehenderit voluptate </li>
-                    <li><span class="glyphicon glyphicon-share-alt"></span> Excepteur sint occaecat cupidatat non proident</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Flexible</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Safe</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> 24x7</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Automated</li>
+                    <li><span class="glyphicon glyphicon-share-alt"></span> Secure</li>
                 </ul>
             </div>
             <div class="clearfix"> </div>
@@ -132,130 +132,8 @@ include 'header_files.php';
     </div>
 </div>
 <!-- //about -->
-<!-- services -->
-<div class="services" id="services">
-    <div class="container">
-        <div class="w3-welcome-heading">
-            <h3>Our services</h3>
-        </div>
-        <div class="agileits-services-grids">
-            <div class="col-md-8 agileits-services-left">
-                <h4>Services Overview</h4>
-                <div class="agileits-services-text">
-                    <p>Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
-                </div>
-                <div class="credit-grids">
-                    <h5>Credit Cards:</h5>
-                    <div class="credit-grid-left">
-                        <div class="credit-grid">
-                            <img src="images/c2.jpg" alt="" />
-                            <h6>Visa</h6>
-                            <p>Nam libero tempore cum soluta nobis est</p>
-                        </div>
-                        <div class="credit-grid">
-                            <img src="images/c3.jpg" alt="" />
-                            <h6>MasterCard</h6>
-                            <p>Nam libero tempore cum soluta nobis est</p>
-                        </div>
-                        <div class="credit-grid">
-                            <img src="images/c4.jpg" alt="" />
-                            <h6>MasterCard</h6>
-                            <p>Nam libero tempore cum soluta nobis est</p>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
-                <div class="credit-grids debit-grids">
-                    <h5>Debit Cards:</h5>
-                    <div class="debit-grids-text">
-                        <p>Morbi nec justo ut ex rhoncus luctus. Duis id ex egestas, tempus lorem sed, porta urna. Duis sodales eleifend laoreet. Vestibulum luctus venenatis massa, in vulputate mi porta ac.</p>
-                    </div>
-                    <div class="w3-services-grids">
-                        <div class="col-md-4 w3l-services-grid">
-                            <div class="w3ls-services-img">
-                                <i class="fa fa-money" aria-hidden="true"></i>
-                            </div>
-                            <div class="agileits-services-info">
-                                <h4>Praesent tempor</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 w3l-services-grid">
-                            <div class="w3ls-services-img">
-                                <i class="fa fa-credit-card" aria-hidden="true"></i>
-                            </div>
-                            <div class="agileits-services-info">
-                                <h4>Praesent tempor</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 w3l-services-grid">
-                            <div class="w3ls-services-img">
-                                <i class="fa fa-line-chart" aria-hidden="true"></i>
-                            </div>
-                            <div class="agileits-services-info">
-                                <h4>Praesent tempor</h4>
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 agileits-services-right">
-                <h4>Marketing Services</h4>
-                <div class="services-two-grids">
-                    <div class="agileinfo-services-right">
-                        <img src="images/10.jpg" alt="" />
-                        <h6>Maecenas sollicitudin eros lectus, a rutrum nisi vulputate quis. Proin tempus, lectus vitae gravida suscipit</h6>
-                    </div>
-                    <!-- date -->
-                    <div id="design" class="date">
-                        <div id="cycler">
-                            <div class="date-text">
-                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-arrow-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet,</a>
-                            </div>
-                            <div class="date-text">
-                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-arrow-right" aria-hidden="true"></i> Cras vestibulum dapibus <span class="blinking"><img src="images/new.png" alt="" /></span></a>
-                            </div>
-                            <div class="date-text">
-                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-arrow-right" aria-hidden="true"></i> Fusce id molestie mauris</a>
-                            </div>
-                            <div class="date-text">
-                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-arrow-right" aria-hidden="true"></i> Aliquam vulputate arcu enim <span class="blinking"><img src="images/new.png" alt="" /></span></a>
-                            </div>
-                            <div class="date-text">
-                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-arrow-right" aria-hidden="true"></i> Donec ac turpis aliquet</a>
-                            </div>
-                            <div class="date-text">
-                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-arrow-right" aria-hidden="true"></i> Morbi nec justo ut ex rhoncus luctus</a>
-                            </div>
-                        </div>
-                        <script>
-                            function blinker() {
-                                $('.blinking').fadeOut(500);
-                                $('.blinking').fadeIn(500);
-                            }
-                            setInterval(blinker, 1000);
-                        </script>
-                        <script>
-                            function cycle($item, $cycler){
-                                setTimeout(cycle, 2000, $item.next(), $cycler);
-
-                                $item.slideUp(1000,function(){
-                                    $item.appendTo($cycler).show();
-                                });
-                            }
-                            cycle($('#cycler div:first'),  $('#cycler'));
-                        </script>
-                    </div>
-                    <!-- //date -->
-                </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
-<!-- //services -->
 <div class="map-grid">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859251.8642025779!2d-76.08274894689792!3d40.06224332601239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c0fb959e00409f%3A0x2cd27b07f83f6d8d!2sNew+Jersey%2C+USA!5e0!3m2!1sen!2sin!4v1474436926209" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.473846757005!2d-73.5843021847716!3d45.520669337695296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bcd86077d57%3A0xfd2b13f6b147ebb!2s4320+Avenue+de+l&#39;H%C3%B4tel-de-Ville%2C+Montr%C3%A9al%2C+QC+H2W+2H4%2C+Canada!5e0!3m2!1sen!2sin!4v1500971436360" style="border:0" allowfullscreen></iframe>
 </div>
 <!-- //map -->
 <!-- contact -->
@@ -278,17 +156,17 @@ include 'header_files.php';
                 <div class="agileits-w3layouts-address-top">
                     <h5>Get in touch</h5>
                     <ul>
-                        <li>+1 234 567 8901</li>
-                        <li>+1 234 567 8902</li>
+                        <li>+1 999 999 9999</li>
+                        <li>+1 999 999 9999</li>
                     </ul>
                 </div>
                 <div class="agileits-w3layouts-address-top">
                     <h5>Address</h5>
                     <ul>
-                        <li>123 Fourth Avenue,</li>
-                        <li>lacinia eros 98104,</li>
-                        <li>New Jersey,</li>
-                        <li>United States.</li>
+                        <li>0000 Avenue de Home Address,</li>
+                        <li>Montreal,</li>
+                        <li>Quebec,</li>
+                        <li>Canada.</li>
                     </ul>
                 </div>
                 <div class="agileits-w3layouts-address-top">

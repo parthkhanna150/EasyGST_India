@@ -45,7 +45,7 @@
     $result=mysqli_query($conn, $s);
     $row=mysqli_fetch_array($result);
     ?>
-    <form action="save_product.php" id="myForm1" method="post">
+    <form action="save_product.php" id="myForm1" method="post" enctype="multipart/form-data">
         <div class="form-group">
             Enter Product Name
             <input type="text" class="form-control" readonly name="textbox1" value="<?php echo $row[1] ?>" data-rule-required="true" data-msg-required="Image cannot be blank">
@@ -75,7 +75,7 @@
     <input type="text" class="form-control" name="textbox3" value="<?php echo $row[4]?>" data-msg-required="Image cannot be blank" data-rule-required="true">
 </div>
 <div class="form-group">
-    Upload Image
+    Insert Image
     <input type="file" name="image" id="image">
 </div>
 <div class="form-group">

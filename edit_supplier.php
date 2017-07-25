@@ -15,7 +15,6 @@
 ?>
 <div class="container">
     <?php
-    include "user_header.php";
     include "connection.php";
     $s="select * from `suppliers` where `id`='". $_GET['supp'] . "'";
     $result=mysqli_query($conn, $s);
@@ -28,7 +27,7 @@
         </div>
         <div class="form-group">
             Enter GST number
-            <input type="text" class="form-control" value="<?php echo $row[2]?>" name="textbox2">
+            <input type="text" readonly class="form-control" value="<?php echo $row[2]?>" name="textbox2">
         </div>
         <div class="form-group">
             Enter Address
@@ -36,7 +35,7 @@
         </div>
         <div class="form-group">
             Enter PAN Number
-            <input type="text" class="form-control" value="<?php echo $row[4]?>" name="textbox4" data-msg-required="Image cannot be blank" data-rule-required="true">
+            <input type="text" readonly class="form-control" value="<?php echo $row[4]?>" name="textbox4" data-msg-required="Image cannot be blank" data-rule-required="true">
         </div>
         <div class="form-group">
             Enter mobile number

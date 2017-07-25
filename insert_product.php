@@ -15,7 +15,7 @@ echo "<br>".$ext."<br>";
 if ($ext=='jpg' || $ext=='gif' || $ext=='png')
 {
     move_uploaded_file($image, "$path");
-    header("location: add_product.php?er=1");
+    //header("location: add_product.php?er=1");
 }
 
 $s = "select * from products where user_email='".$_SESSION["username"]."'";

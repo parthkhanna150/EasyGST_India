@@ -8,12 +8,20 @@
          $flag=1;
          break;
      }
+     if($_POST['textbox2']!=$_POST['textbox3']){
+         $flag=2;
+         break;
+     }
  }
+
  if($flag==1){
-     echo '<h3 class="text-danger">Duplicate Email Address</h3>';
+     header("location: add_admin.php?emails=Admin with same email already present!");
+ }
+ elseif ($flag==2){
+     header("location: add_admin.php?passwords=Passwords don't match!");
  }
  else{
      $s1 = "insert into admins values('".$_POST["textbox1"]."','".$_POST["textbox2"]."','".$_POST["textbox4"]."','".$_POST["sell"]."',null)";
      mysqli_query($conn, $s1);
-     header("location: view_admin.php");//?q is basically passing a string which has an implication as specified
+     header("location: view_admin.php");
  }

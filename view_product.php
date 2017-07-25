@@ -4,23 +4,25 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<?php     include "user_header.php";
+<?php
+include "user_header.php";
 ?>
 <div class="container">
+    <br>
     <?php
     include "connection.php";
     $s="select * from products where user_email='".$_SESSION["username"]."'";
     $result=mysqli_query($conn, $s);
     $ans='<table class="table table-bordered">';
     $ans=$ans."<tr>";
-    $ans=$ans."<td>Name</td>";
-    $ans=$ans."<td>Description</td>";
-    $ans=$ans."<td>Stock</td>";
-    $ans=$ans."<td>Photo</td>";
-    $ans=$ans."<td>Selling Price</td>";
-    $ans=$ans."<td>MRP</td>";
-    $ans=$ans."<td>Delete</td>";
-    $ans=$ans."<td>Edit</td>";
+    $ans=$ans."<th>Name</th>";
+    $ans=$ans."<th>Description</th>";
+    $ans=$ans."<th>Stock</th>";
+    $ans=$ans."<th>Photo</th>";
+    $ans=$ans."<th>Selling Price</th>";
+    $ans=$ans."<th>MRP</th>";
+    $ans=$ans."<th>Delete</th>";
+    $ans=$ans."<th>Edit</th>";
     $ans=$ans."</tr>";
     while($row=mysqli_fetch_array($result)){
         $ans=$ans."<tr>";

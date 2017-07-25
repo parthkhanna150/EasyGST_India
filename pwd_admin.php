@@ -7,7 +7,14 @@
     <?php
     include "admin_header.php";
     ?>
-    <div class="container"
+    <div class="container">
+        <br>
+        <?php
+        if(isset($_REQUEST['passwords']))
+            echo '<span class="text-danger">'.$_REQUEST['passwords'].'</span>';
+        if(isset($_REQUEST['old']))
+            echo '<span class="text-danger">'.$_REQUEST['old'].'</span>';
+        ?>
     <div class="row">
         <div class="col-sm-6">
             <form action="update_password_admin.php" method="post">

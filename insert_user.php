@@ -24,11 +24,10 @@ while ($row=mysqli_fetch_array($result)){
         break;
     }
 }
-if($flag==1){
-    echo '<h3 class="text-danger">Item already exists in the record</h3>';
-}
+if($flag==1)
+    header('Location:add_user.php?emails=User with this email already exists!');
 elseif ($flag==2)
-    echo '<h3 class="text-danger">Passwords do not match</h3>';
+    header('Location:add_user.php?passwords=Passwords do not match!');
 else{
     $s1 = "insert into public_signup values('".$email."','".$pwdNew."','".$mob."','".$address."','".$gender."','".$entity."','".$gstno."')";
     mysqli_query($conn, $s1);

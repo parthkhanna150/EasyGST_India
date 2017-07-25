@@ -11,7 +11,19 @@
     include "connection.php";
     $s="select * from suppliers where user_email='".$_SESSION["username"]."'";
     $result=mysqli_query($conn, $s);
+    ?><br>
+    <?php
     $ans='<table class="table table-bordered">';
+    $ans=$ans."<tr>";
+    $ans=$ans."<th>Name</th>";
+    $ans=$ans."<th>GST No</th>";
+    $ans=$ans."<th>Address</th>";
+    $ans=$ans."<th>PAN No.</th>";
+    $ans=$ans."<th>Mobile No.</th>";
+    $ans=$ans."<th>Email</th>";
+    $ans=$ans."<th>Delete</th>";
+    $ans=$ans."<th>Edit</th>";
+    $ans=$ans."</tr>";
     while($row=mysqli_fetch_array($result)){
         $ans=$ans."<tr>";
         $ans=$ans."<td>".$row[1]."</td>";

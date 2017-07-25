@@ -22,7 +22,7 @@ include 'header_files.php';
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a  href="index.html">Net <span>Banking</span></a></h1>
+                    <h1><a  href="index.php">Easy GST <span>India</span></a></h1>
                 </div>
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,7 +45,6 @@ include 'header_files.php';
                                 <li><a href="add_admin.php">Add Admin</a></li>
                             </ul>
                         </li>
-                        <li><a href="view_gstr2.php">GSTR-2</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span
                                         class="caret"></span></a>

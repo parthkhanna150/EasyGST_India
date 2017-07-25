@@ -2,7 +2,7 @@
 <div class="jarallax footer">
     <div class="container">
         <div class="footer-logo">
-            <h3><a href="index.php">Net <span>Banking</span></a></h3>
+            <h3><a href="index.php">Easy GST <span>India</span></a></h3>
         </div>
         <div class="agileinfo-social-grids">
             <h4>We are social</h4>
@@ -15,7 +15,7 @@
             </ul>
         </div>
         <div class="copyright">
-            <p>© 2017 Net Banking. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+            <p>© 2017 Easy GST India | Credits: Design by <a href="http://w3layouts.com">W3layouts</a></p>
         </div>
     </div>
 </div>

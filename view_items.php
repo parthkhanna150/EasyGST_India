@@ -13,7 +13,19 @@ include "admin_header.php";
     $s="select * from items";
     $i=1;
     $result=mysqli_query($conn, $s);
+    ?><br>
+    <?php
     $ans='<table class="table table-bordered">';
+    $ans=$ans."<tr>";
+    $ans=$ans."<th>Serial No.</th>";
+    $ans=$ans."<th>Name</th>";
+    $ans=$ans."<th>CGST</th>";
+    $ans=$ans."<th>SGST</th>";
+    $ans=$ans."<th>IGST</th>";
+    $ans=$ans."<th>HSN Code</th>";
+    $ans=$ans."<th>Delete</th>";
+    $ans=$ans."<th>Edit</th>";
+    $ans=$ans."</tr>";
     while($row=mysqli_fetch_array($result)){
         $ans=$ans."<tr>";
         $ans=$ans."<td>".$i."</td>";

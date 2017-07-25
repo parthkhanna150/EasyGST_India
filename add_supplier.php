@@ -15,7 +15,12 @@
 include "user_header.php"
 ?>
 <div class="container">
-
+<br>
+    <?php
+    if (isset($_REQUEST['names'])){
+        echo '<span class="text-danger">'.$_REQUEST['names'].'</span>';
+    }
+    ?>
     <form action="insert_supplier.php" id="myForm1" method="post">
         <div class="form-group">
             Enter Name

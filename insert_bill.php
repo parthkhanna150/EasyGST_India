@@ -1,6 +1,7 @@
 <?php
 include 'cart.php';
-include 'user_header.php';
+session_start();
+//include 'user_header.php';
 include 'connection.php';
 $total = 0;
 $ar = array();
@@ -8,7 +9,7 @@ $ar = array();
 $ar = $_SESSION['products'];
 
 for ($i = 0; $i < count($ar); $i++) {
-    echo "<br>".$total."<br>";
+//    echo "<br>".$total."<br>";
     $total += $ar[$i]->mrp * $ar[$i]->qty;
 }
 
@@ -18,13 +19,13 @@ $phoneRetail=$_REQUEST['phoneRetail'];
 $emailRetail=$_REQUEST['emailRetail'];
 $numberRetail=$_REQUEST['numberRetail'];
 
-echo $total;
+//echo $total;
 if($retail=='retailInvoice')
 {
-    $s="INSERT INTO `customers`(`id`, `cust_name`, `phone`, `email`, `gstno`) 
-VALUES (NULL ,'".$fullname."','".$phoneRetail."','".$emailRetail."','".$numberRetail."')";
+    $s="INSERT INTO `customers`(`id`, `cust_name`, `phone`, `email`, `gstno`, `user_email`) 
+VALUES (NULL ,'".$fullname."','".$phoneRetail."','".$emailRetail."','".$numberRetail."','".$_SESSION["username"]."')";
     mysqli_query($conn,$s);
-    echo $s;
+//    echo $s;
     $cust="select MAX(id) as id from customers";
     $cust_result=mysqli_query($conn,$cust);
     $cust_row=mysqli_fetch_array($cust_result);
@@ -41,19 +42,19 @@ $tym=date('H:i:s');
 $bill="INSERT INTO `bill`(`id`, `total`, `cust_id`, `bill_date`, `bill_time`, `email`, `bill_type`) 
 VALUES (NULL ,'".$total."','".$cust_id."','".$dt."','".$tym."','".$_SESSION["username"]."','".$retail."')";
 mysqli_query($conn,$bill);
-echo $bill;
+//echo $bill;
 $bil="select MAX(`id`) as id from `bill`";
 $bil_result=mysqli_query($conn,$bil);
 $bil_row=mysqli_fetch_array($bil_result);
-echo $bil_row['id'];
-echo count($ar);
+//echo $bil_row['id'];
+//echo count($ar);
 for ($i = 0; $i < count($ar); $i++) {
 
     $bill_detail="INSERT INTO `bill_details`(`id`, `bill_id`, `product_id`, `price`, `cgst`, `sgst`, `total_gst`, `mrp`, `qty`) 
 VALUES (NULL ,'".$bil_row['id']."','".$ar[$i]->id."','".$ar[$i]->price."','".$ar[$i]->cgst."','".$ar[$i]->sgst."','".$ar[$i]->tgst."','".$ar[$i]->mrp."','".$ar[$i]->qty."')";
     mysqli_query($conn,$bill_detail);
 
-    echo $bill_detail;
+//    echo $bill_detail;
     $pro="select * from products where `product_id`=".$ar[$i]->id;
     $pro_result=mysqli_query($conn,$pro);
     $pro_row=mysqli_fetch_array($pro_result);

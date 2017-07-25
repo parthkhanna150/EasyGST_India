@@ -14,7 +14,7 @@ include 'header_files.php';
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h1><a  href="index.html">Net <span>Banking</span></a></h1>
+                    <h1><a  href="index.php">Easy GST <span>India</span></a></h1>
                 </div>
                 <!--navbar-header-->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

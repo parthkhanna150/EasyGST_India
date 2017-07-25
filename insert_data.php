@@ -21,6 +21,6 @@ if($flag==1){
 else{
     $s1 = "insert into items values(null,'".$name."','".$CGST."','".$SGST."','".$iGST."','".$hsn."')";
     mysqli_query($conn, $s1);
-//    header("location: view_items.php");
-    echo $s1;
+    header("location: view_items.php");
+//    echo $s1;
 }

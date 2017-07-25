@@ -12,7 +12,16 @@ include "admin_header.php";
     include "connection.php";
     $s="select * from admins";
     $result=mysqli_query($conn, $s);
+    ?><br>
+    <?php
     $ans='<table class="table table-bordered">';
+    $ans=$ans."<tr>";
+    $ans=$ans."<th>Email</th>";
+    $ans=$ans."<th>Mobile No.</th>";
+    $ans=$ans."<th>Access Type</th>";
+    $ans=$ans."<th>Delete</th>";
+    $ans=$ans."<th>Edit</th>";
+    $ans=$ans."</tr>";
     while($row=mysqli_fetch_array($result)){
         $ans=$ans."<tr>";
         $ans=$ans."<td>".$row[0]."</td>";

@@ -15,7 +15,15 @@
 include "public_header.php"
 ?>
 <div class="container">
-
+<br>
+    <?php
+    if (isset($_REQUEST['emails'])){
+        echo '<span class="text-danger">'.$_REQUEST['emails'].'</span>';
+    }
+    elseif(isset($_REQUEST['passwords'])){
+        echo '<span class="text-danger">'.$_REQUEST['passwords'].'</span>';
+    }
+    ?>
     <form action="insert_user.php" id="myForm1" method="post">
         <div class="form-group">
             Enter Email Address
