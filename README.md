@@ -15,9 +15,6 @@ from the arduous job of accounting based on this new regime.
 
 The web application is recommended to be used in Chrome browser, although you may use others such as Safari, Opera, IE 10,11 and firefox.
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Technologies Used
 
