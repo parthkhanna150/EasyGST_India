@@ -15,8 +15,9 @@ from the arduous job of accounting based on this new regime.
 
 The web application is recommended to be used in Chrome browser, although you may use others such as Safari, Opera, IE 10,11 and firefox.
 
-### Use it
+### Check it out:
 
+Use it at http://vmmprojects.com/parth/index.php
 
 ## Technologies Used
 
