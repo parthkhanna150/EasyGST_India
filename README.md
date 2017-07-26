@@ -8,4 +8,28 @@ spend extravagant amounts of money on people who understand GST accouting.
 More on GST in India [here](http://www.gstindia.com/about/).
 
 I therefore developed this software in the form of a web app using which firms/entities can conveniently save themselves
+<<<<<<< HEAD
 from the arduous job of accounting based on this new regime.
+=======
+from the arduous job of accounting based on this new regime.
+
+
+### Prerequisites
+
+The web application is recommended to be used in Chrome browser, although you may use others such as Safari, Opera, IE 10,11 and firefox.
+
+### Use it
+
+
+## Technologies Used
+
+* [Bootstrap](getbootstrap.com/)
+* [JQuery](https://jquery.com/)
+* [AJAX](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
+* [MariaDB](https://mariadb.org/about/)
+* Languages: PHP, JavaScript, HTML, CSS, SQL
+
+## Acknowledgments
+
+* W3Layouts for frontend Design
+>>>>>>> 94a6f8d36ed47355688f09584db0649242ac73ff
