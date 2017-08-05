@@ -12,6 +12,7 @@ I therefore developed this software in the form of a Point of Sale (POS) web app
 ### Features
 
 * Automated reporting (whenever billing is done) for R1 form - the form which needs to be sent for tax returns - and option for R2 form which allows manual updation of accounting in case of erranrous input
+* The user can check the reports between any two selected dates, making it easier for one to analyse sales
 * Automated effect of taxes (central GGST and State GST and total GST) on selling price of the products
 * Speedy billing process for customers coming again (stores customers information in database)
 * Dynamic tables allowing for editing/ deletion of products and suppliers (for users) and editing/ deletion of tax-slabs (controlled by admins)
