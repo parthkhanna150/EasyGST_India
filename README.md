@@ -7,9 +7,15 @@ today feels the need to undergo exhaustive training sessions and
 spend extravagant amounts of money on people who understand GST accouting.
 More on GST in India [here](http://www.gstindia.com/about/).
 
-I therefore developed this software in the form of a web app using which firms/entities can conveniently save themselves
-from the arduous job of accounting based on this new regime.
+I therefore developed this software in the form of a Point of Sale (POS) web app using which firms/entities can conveniently save themselves from the arduous job of accounting based on this new regime.
 
+### Features
+
+* Automated reporting (whenever billing is done) for R1 form - the form which needs to be sent for tax returns - and option for R2 form which allows manual updation of accounting in case of erranrous input
+* Automated effect of taxes (central GGST and State GST and total GST) on selling price of the products
+* Speedy billing process for customers coming again (stores customers information in database)
+* Dynamic tables allowing for editing/ deletion of products and suppliers (for users) and editing/ deletion of tax-slabs (controlled by admins)
+* Full application with an admin panel and a public side
 
 ### Prerequisites
 
